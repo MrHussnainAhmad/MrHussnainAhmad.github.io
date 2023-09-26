@@ -167,7 +167,7 @@ h2, h1, span {
     object-fit: cover;
     z-index: 1;
   }
-  .contact h2 {
+/*   .contact h2 {
     position: absolute;
     font-family: "Audiowide", sans-serif;
     font-size: 70px;
@@ -177,7 +177,7 @@ h2, h1, span {
     left: 33%;
     transform: translate(-50%, -50%); /* Centers the h2 element */
     z-index: 2; 
-  }
+  } */
 
   .footer {
     position: absolute;
