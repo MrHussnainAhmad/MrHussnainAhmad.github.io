@@ -183,7 +183,7 @@ h2, h1, span {
     position: absolute;
     top: 2805px;
     bottom: 0;
-    right: 40;
+    float: right;
     color: black; /* Change the text color to your preference */
     padding: 20px; /* Adjust padding as needed */
     z-index: 1; /* Bring the footer to the front */
