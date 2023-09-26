@@ -4,6 +4,8 @@
         <title>PortFolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
         <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">   
         <link rel="icon" href="icon.png" sizes="392x392">
@@ -60,79 +62,16 @@
                       </div> 
                 </section>
                 <section class="contact" id="contact">
-                    <div class="contact-content">
-                        <h2 >As You Saw The Sample!</h2>
-                        <h3>If You Want To Hire Me You Can Select Any Of Following...
-                        </br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I Will Text You Back ASAP!</h3>
-                    </div>
-                    <div class="container">
-                        <form action="">
-                
-                            <label for="Name">Name</label>
-                            <input type="text" id="Name" placeholder="Enter Your Name....">
-                
-                            <label for="Email">Email</label>
-                            <input type="text" id="Email" placeholder="Enter Your Email...">
-                
-                            <label for="Contact">Contact Number</label>
-                            <input type="text" id="Contact" placeholder="Enter Your Contact number...">
-                
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" placeholder="Enter Your Subject...">
-                
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" placeholder="Enter Your Message" style="height: 200px;"></textarea>
-                            <input type="button" value="button" onclick="Send()">
-                        </form>
-                    </div>
-                    </div>
-                  
-                    </section>
- <section class="footer" id="footer">
-    <p>&copy; 2024 All Rights Reserved | Design By:Hussnain Ahmad</p>
- </section>
- <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <h2>Contact Me</h2>
+                    <div class="sorry-video">
+                        <video autoplay loop muted>
+                          <source src="sorry.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                </section>
+                    <div class="footer">
+                        &copy; 2024 All Rights Reserved | Design By:Hussnain Ahmad
+                      </div>
 
- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
- <script>
-
-     function Send(){
-
-       
-        var name = document.getElementById("Name").value;
-        var email = document.getElementById("Email").value;
-        var contact = document.getElementById("Contact").value;
-        var sub = document.getElementById("subject").value;
-        var mess = document.getElementById("message").value;
-
-        var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
-         
-        console.log(body);
-        Email.send({
-  
-        Subject : sub,
-        Body : body
-         }).then(
-          message =>{
-                    if(message=='OK'){
-
-                        swal("Hurray!", "Your Data Successfull Received", "success");
-                    }
-                    else{
-
-                        swal("Oops!!", "Your Data is not Received, There Must Be A Problem", "error");
-                    }
-                }
-              );
-
-            
-        
-        }
-
-
-    
-
- </script>
     </body>
 </html>
