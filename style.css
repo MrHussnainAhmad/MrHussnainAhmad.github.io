@@ -176,14 +176,14 @@ h2, h1, span {
     top: 333%;
     left: 33%;
     transform: translate(-50%, -50%); /* Centers the h2 element */
-    z-index: 2; 
-  } */
+/*     z-index: 2; 
+  } */ */
 
   .footer {
     position: absolute;
     top: 2805px;
     bottom: 0;
-    right: 0;
+    right: 40;
     color: black; /* Change the text color to your preference */
     padding: 20px; /* Adjust padding as needed */
     z-index: 1; /* Bring the footer to the front */
