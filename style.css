@@ -124,11 +124,8 @@ h2, h1, span {
 }
 .contact{
     display: flex;
-    align-items: center;
-    padding: 0 9%;
-    background-image: url(contact.jpg);
-    background-size: fixed;
-   
+    align-items: cover;
+    /* padding: 0 9%; */
 }
 .sample {
     position: relative;
@@ -142,6 +139,7 @@ h2, h1, span {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
   
   .background-video video {
@@ -149,67 +147,44 @@ h2, h1, span {
     height: 100%;
     object-fit: cover;
   }
-  .contact h2{
-    color: white;
-    position: absolute;
-    top: 333%;
-    left: 41%;
-    align-content: center;
-  }
-  #contact h2 { 
-    font-family: "Trirong", serif;
-font-size: 20px; } 
-.contact h3{
-    color: white;
-    position: absolute;
-    top: 335%;
-    left: 35%;
-    align-content: center;
-    display: flex;
-  }
-  #contact h3 { 
-    font-family: "Trirong", serif;
-    font-size: 15px; } 
-/* .social-media{
-    position: absolute;
-    margin: 5%;
-    padding: 2%;
-  } */
-  .container{
-    border-radius: 5px;
-    padding: 30px;
-    height: 220px;
-    width: 500px;
-    position: absolute;
-    left: 30%;
-    top: 343%;
-  }
-
-  input[type=text], textarea{
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 1px;
-      resize: vertical;
-  }
- input[type=button]{
-  background-color: #04aa60;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor:pointer;
- }
- input[type=button]:hover{
-  background-color: red;
- }
- .footer {
-    top: 406%;
-    left: 65%;
-    position: absolute;
-    min-height: 0px;
+  
+  .contact {
+    position: relative;
+    min-height: 500px;
     overflow: hidden;
   }
+  .sorry-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .sorry-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .contact h2 {
+    position: absolute;
+    font-family: "Audiowide", sans-serif;
+    font-size: 70px;
+    color: black;
+    position: absolute;
+    top: 333%;
+    left: 33%;
+    transform: translate(-50%, -50%); /* Centers the h2 element */
+    z-index: 2; 
+  }
+
+  .footer {
+    position: absolute;
+    top: 2805px;
+    bottom: 0;
+    right: 0;
+    color: black; /* Change the text color to your preference */
+    padding: 20px; /* Adjust padding as needed */
+    z-index: 1; /* Bring the footer to the front */
+}
